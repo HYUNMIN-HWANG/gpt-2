@@ -37,7 +37,7 @@ def interact_model(
      considered for each step (token), resulting in deterministic completions,
      while 40 means 40 words are considered at each step. 0 (default) is a
      special setting meaning no restrictions. 40 generally is a good value.
-     :models_dir : path to parent folder containing model subfolders
+    :models_dir : path to parent folder containing model subfolders
      (i.e. contains the <model_name> folder)
     """
     models_dir = os.path.expanduser(os.path.expandvars(models_dir))
