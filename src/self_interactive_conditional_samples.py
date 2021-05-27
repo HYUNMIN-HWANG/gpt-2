@@ -12,8 +12,8 @@ def interact_model(
     # model_name='124M',
     model_name='1558M',
     seed=None,
-    # nsamples=1,
-    nsamples=3, # 한 번에 출력되는 sample수 가 늘어남 
+    nsamples=1,
+    # nsamples=3, # 한 번에 출력되는 sample수 가 늘어남 
     batch_size=1,
     length=None,
     temperature=1,

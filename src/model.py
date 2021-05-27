@@ -119,7 +119,6 @@ def mlp(x, scope, n_state, *, hparams):
         h2 = conv1d(h, 'c_proj', nx)
         return h2
 
-
 def block(x, scope, *, past, hparams):
     with tf.variable_scope(scope):
         nx = x.shape[-1].value

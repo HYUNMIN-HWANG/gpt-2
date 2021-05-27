@@ -227,6 +227,7 @@ class Encoder:
             # [40, 765, 284, 307]
             # [40, 765, 284, 307, 257]
             # [40, 765, 284, 307, 257, 6253]
+        # I want to be a doctor -> [40, 765, 284, 307, 257, 6253]
         return bpe_tokens
 
     def decode(self, tokens):
@@ -382,7 +383,7 @@ def encode(text):
 # encode('I want to be a doctor')
 '''
 
-
+'''
 def decode(tokens):
     text = ''.join([decoder[token] for token in tokens])
     print(text) # .ĠIĠthinkĠyou
@@ -400,6 +401,8 @@ def decode(tokens):
 out = [[13,314,892,345]]
 for i in out : 
     decode(i)
+'''
+
 
 # interactive_conditional_samples.py 43줄
 def get_encoder(model_name, models_dir):
